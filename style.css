@@ -1,0 +1,65 @@
+:root {
+    --light-colour: #B9EDDD;
+    --accent-colour: #87CBB9;
+    --medium-colour: #569DAA;
+    --dark-colour: #006f87;
+}
+
+.mcmaster {
+    color: #7A003C;
+    text-shadow: 2px 2px #FDBF57;
+}
+
+.pixel {
+    image-rendering: pixelated;
+}
+
+body {
+    font-family: 'Pangolin', sans-serif;
+    color: var(--dark-colour);
+    background: var(--light-colour);
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+.header, .main, .footer {
+    display: grid;
+}
+
+.main {
+    width: min(600px, 100%);
+    margin: 0px auto;
+}
+
+.info {
+    width: 60%;
+    float: left;
+}
+
+.info img {
+    width: 100%;
+}
+
+.icon {
+    width: 30%;
+    float: right;
+}
+
+.icon img {
+    width: 100%;
+    border: 10px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.socials {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.socials a {
+    padding: 5px;
+}
+
