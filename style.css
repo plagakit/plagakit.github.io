@@ -7,6 +7,7 @@
 
 /* Styles */
 .mcmaster {
+    font-weight: bold;
     color: #7A003C;
     text-shadow: 2px 2px #FDBF57;
 }
@@ -23,7 +24,6 @@ body {
     font-size: 1.2em;
 }
 
-/* Header */
 .header, .main, .footer {
     display: grid;
 }
@@ -33,9 +33,11 @@ body {
     margin: 0px auto;
 }
 
+/* Header */
 .info {
     width: 60%;
     float: left;
+    font-size: 1.25em;
 }
 
 .info img {
@@ -49,7 +51,7 @@ body {
 
 .icon img {
     width: 100%;
-    border: 10px solid;
+    border: 15px solid var(--medium-colour);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -73,6 +75,9 @@ body {
     overflow: hidden;
     text-decoration: none;
     position: relative;
+    border: solid 15px var(--medium-colour);
+    border-radius: 5px;
+    margin: 10px;
     transition: height 1s;
 }
 
@@ -80,7 +85,7 @@ body {
     height: 400px;
 }
 
-.project-preview {
+.project .project-preview {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,7 +96,7 @@ body {
     z-index: -1;
 }
 
-.project-title {
+.project .project-title {
     display: inline-block;
     position: relative;
     left: 50%;
@@ -103,13 +108,16 @@ body {
     background-color: rgba(0, 111, 135, 0.7);
 }
 
+.project .ubisoft { background-image: url("media/ubisoft.jpg"); }
+.project:hover .ubisoft { background-image: url("media/ubisoft_gif.gif"); }
+
 .project .cat { background-image: url("media/cat.jpg"); }
 .project:hover .cat { background-image: url("media/catgif.gif"); }
 
 
 /* Footer */
 
-hr {
+.footer hr {
     margin: 50px 0 10px 0;
     border: solid 3px;
     width: 100%;
