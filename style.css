@@ -111,6 +111,9 @@ body {
 .project .ubisoft { background-image: url("media/ubisoft.jpg"); }
 .project:hover .ubisoft { background-image: url("media/ubisoft_gif.gif"); }
 
+.project .chip8 { background-image: url("media/cat.jpg"); }
+.project:hover .chip8 { background-image: url("media/catgif.gif"); }
+
 .project .cat { background-image: url("media/cat.jpg"); }
 .project:hover .cat { background-image: url("media/catgif.gif"); }
 
