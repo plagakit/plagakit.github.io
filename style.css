@@ -78,7 +78,7 @@ body {
     border: solid 15px var(--medium-colour);
     border-radius: 5px;
     margin: 10px;
-    transition: height 1s;
+    transition: height 0.5s;
 }
 
 .project:hover {
