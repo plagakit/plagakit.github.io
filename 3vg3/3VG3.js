@@ -16,7 +16,7 @@ var Module = typeof Module != 'undefined' ? Module : {};
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\thoma\AppData\Local\Temp\tmprsriozwn.js
+// include: C:\Users\thoma\AppData\Local\Temp\tmpfz4n5vg6.js
 
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
@@ -195,21 +195,21 @@ Module['FS_createPath']("/", "resources", true, true);
 
   })();
 
-// end include: C:\Users\thoma\AppData\Local\Temp\tmprsriozwn.js
-// include: C:\Users\thoma\AppData\Local\Temp\tmpn49mlat_.js
+// end include: C:\Users\thoma\AppData\Local\Temp\tmpfz4n5vg6.js
+// include: C:\Users\thoma\AppData\Local\Temp\tmp7axj699z.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['ENVIRONMENT_IS_PTHREAD'] || Module['$ww']) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\thoma\AppData\Local\Temp\tmpn49mlat_.js
-// include: C:\Users\thoma\AppData\Local\Temp\tmpu5sicewt.js
+  // end include: C:\Users\thoma\AppData\Local\Temp\tmp7axj699z.js
+// include: C:\Users\thoma\AppData\Local\Temp\tmpc2jfh76t.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach(function(task) {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\thoma\AppData\Local\Temp\tmpu5sicewt.js
+  // end include: C:\Users\thoma\AppData\Local\Temp\tmpc2jfh76t.js
 
 
 // Sometimes an existing Module object exists with properties
@@ -1178,8 +1178,8 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  140568: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 140621: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); }
+  137080: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 137133: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); }
 };
 function GetWindowInnerWidth() { return window.innerWidth; }
 function GetWindowInnerHeight() { return window.innerHeight; }
@@ -10092,8 +10092,8 @@ var stackAlloc = createExportWrapper('stackAlloc');
 var _emscripten_stack_get_current = () => (_emscripten_stack_get_current = wasmExports['emscripten_stack_get_current'])();
 var ___cxa_is_pointer_type = createExportWrapper('__cxa_is_pointer_type');
 var dynCall_jiji = Module['dynCall_jiji'] = createExportWrapper('dynCall_jiji');
-var ___start_em_js = Module['___start_em_js'] = 140690;
-var ___stop_em_js = Module['___stop_em_js'] = 140763;
+var ___start_em_js = Module['___start_em_js'] = 137202;
+var ___stop_em_js = Module['___stop_em_js'] = 137275;
 
 // include: postamble.js
 // === Auto-generated postamble setup entry stuff ===
