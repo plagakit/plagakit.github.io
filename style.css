@@ -44,12 +44,12 @@ body {
     width: 100%;
 }
 
-.icon {
+.profile-icon {
     width: 30%;
     float: right;
 }
 
-.icon img {
+.profile-icon img {
     width: 100%;
     border: 15px solid var(--medium-colour);
     border-radius: 50%;
