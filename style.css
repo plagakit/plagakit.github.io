@@ -56,6 +56,10 @@ body {
     overflow: hidden;
 }
 
+.profile-icon img:hover {
+    cursor: pointer;
+}
+
 .socials {
     width: 100%;
     text-align: center;
@@ -65,6 +69,13 @@ body {
 
 .socials a {
     padding: 5px;
+}
+
+.go-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
 }
 
 /* Projects */
