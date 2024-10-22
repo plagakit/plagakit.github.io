@@ -128,6 +128,8 @@ body {
 .project .cat { background-image: url("media/cat.jpg"); }
 .project:hover .cat { background-image: url("media/catgif.gif"); }
 
+.project .renderer { background-image: url("media/monkey.png"); }
+.project:hover .renderer { background-image: url("media/catgif2.gif"); }
 
 /* Footer */
 
