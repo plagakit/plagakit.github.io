@@ -131,6 +131,9 @@ body {
 .project .renderer { background-image: url("media/monkey.png"); }
 .project:hover .renderer { background-image: url("media/catgif2.gif"); }
 
+.project .ubisoft2025 { background-image: url("media/speedgolf.png"); }
+.project:hover .ubisoft2025 { background-image: url("media/speedgolf_gif.gif"); }
+
 /* Footer */
 
 .footer hr {
