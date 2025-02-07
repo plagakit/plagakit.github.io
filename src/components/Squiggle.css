@@ -1,0 +1,21 @@
+@keyframes filterCycle {
+	0% {
+		filter: url(#turbulence-0);
+	}
+	25% {
+		filter: url(#turbulence-3);
+	}
+	50% {
+		filter: url(#turbulence-1);
+	}
+	75% {
+		filter: url(#turbulence-2);
+	}
+	100% {
+		filter: url(#turbulence-0);
+	}
+}
+
+.squiggle {
+	image-rendering: smooth;
+}
