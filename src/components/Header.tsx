@@ -1,11 +1,12 @@
 import iconURL from "../assets/front_page/icon.png";
 import Squiggle from "../components/Squiggle";
+import ProfileCoin from "./ProfileCoin";
 
 const Header = () => {
 	return (
 		<header className="mt-3 lg:mt-10 flex justify-center">
 			<div className="flex flex-col lg:flex-row">
-				<div className="w-full lg:w-3/5">
+				<div className="w-full lg:w-3/5 mt-4">
 					<Squiggle>
 						<h1 className="text-center sm:text-center lg:justify-start font-bold text-[3.5rem] leading-none flex justify-center">
 							Thomas Plagakis
@@ -18,14 +19,17 @@ const Header = () => {
 					</p>
 				</div>
 				<div className="w-full lg:w-2/5 flex justify-center lg:justify-end">
-					<img
-						src={iconURL}
-						className="rounded-full overflow-hidden"
-						style={{
-							border: "15px solid var(--medium-colour)",
-						}}
-						alt="Picture of me."
-					></img>
+					<div className="h-full aspect-square">
+						<ProfileCoin />
+						{/* <img
+							src={iconURL}
+							className="w-full h-full rounded-full overflow-hidden"
+							style={{
+								border: "15px solid var(--medium-colour)",
+							}}
+							alt="Picture of me."
+						></img> */}
+					</div>
 				</div>
 			</div>
 		</header>
