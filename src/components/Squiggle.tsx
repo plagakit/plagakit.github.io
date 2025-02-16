@@ -6,7 +6,7 @@ interface SquiggleProps {
 	duration?: number;
 }
 
-const Squiggle = ({ children, duration = 5 }: SquiggleProps) => {
+const Squiggle = ({ children, duration = 2 }: SquiggleProps) => {
 	return (
 		<>
 			<div
@@ -14,6 +14,7 @@ const Squiggle = ({ children, duration = 5 }: SquiggleProps) => {
 				style={{
 					filter: "url(#turbulence-0)",
 					animation: `filterCycle ${duration}s infinite`,
+					animationDelay: `333ms`,
 				}}
 			>
 				{children}

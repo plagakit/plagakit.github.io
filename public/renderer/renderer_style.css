@@ -1,0 +1,29 @@
+#canvas {
+    top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    overflow: hidden;
+    display: block;
+    width: 1280px;
+    height: 720px;
+}
+
+.rendererdesc {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(800px, 100%);
+    font-size: 1.25em;
+}
+
+.renderericon {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.renderertitle {
+    margin-top: 0px;
+    text-align: center;
+}

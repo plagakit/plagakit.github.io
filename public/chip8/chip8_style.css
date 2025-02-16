@@ -1,0 +1,17 @@
+.chip8 {
+    width: 75%;
+    display: grid;
+    margin: 0px auto;
+    border: solid 15px var(--medium-colour);
+    border-radius: 5px;
+}
+
+.chip8icon {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.chip8title {
+    margin-top: 0px;
+    text-align: center;
+}
