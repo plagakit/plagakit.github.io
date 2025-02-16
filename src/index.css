@@ -1,0 +1,27 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Schoolbell&display=swap");
+@import "tailwindcss";
+
+:root {
+	font-family: "Pangolin", sans-serif;
+	line-height: 1.5;
+
+	color-scheme: light;
+	--light-colour: #b9eddd;
+	--accent-colour: #87cbb9;
+	--medium-colour: #569daa;
+	--dark-colour: #006f87;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	color: var(--dark-colour);
+	background: var(--light-colour);
+}
+
+.mcmaster {
+	font-weight: bold;
+	color: #7a003c;
+	text-shadow: 2px 2px #fdbf57;
+}

@@ -1,79 +1,21 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thomas Plagakis</title>
 
-<!-- Thomas Plagakis's Website -->
-<html>
-    <head>
-        <title>Thomas Plagakis</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-
-        <link rel="preload" href="media/name.gif" as="image">
-        <link rel="preload" href="media/github_icon.gif" as="image">
-        <link rel="preload" href="media/linkedin_icon.gif" as="image">
-        <link rel="preload" href="media/chip8_gif.gif" as="image">
-        <link rel="preload" href="media/ubisoft_gif.gif" as="image">
-        <link rel="preload" href="media/speed_golf_gif.gif" as="image">
-
-        <link rel="stylesheet" href="style.css">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <div class="main">
-            <div class="header">
-                <div class="about">
-                    <div class="info">
-                        <img class="pixel" src="media/name.gif" alt="Thomas Plagakis">
-                        <p>I'm a <s>first</s> <s>second</s> third year student at <span class="mcmaster">McMaster University</span>. I like coding things.</p>
-                    </div>
-                    <div class="profile-icon">
-                        <img src="media/icon.png" alt="Icon">
-                    </div>
-                </div>
-                <div class="socials pixel">
-                    <a href="https://github.com/plagakit" target="_blank"><img src="media/github_icon.gif" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/tplagakis/" target="_blank"><img src="media/linkedin_icon.gif" alt="LinkedIn"></a>
-                </div>
-            </div>
-            <div class="projects">
-                <h1><u>Projects</u></h1>
-                <a class="project" href="https://github.com/plagakit/ubisoft-next-2025" target="_blank">
-                    <div class="project-preview ubisoft2025"></div>
-                    <div class="project-title">Ubisoft NEXT 2025</div>
-                </a>
-                <a class="project" href="/renderer/renderer.html">
-                    <div class="project-preview renderer"></div>
-                    <div class="project-title">CPU Renderer (WIP)</div>
-                </a>
-                <a class="project" href="/3vg3/3VG3.html">
-                    <div class="project-preview cat"></div>
-                    <div class="project-title">3VG3 Physics Engine (WIP)</div>
-                </a>
-                <a class="project" href="/chip8/chip-8-emulator.html">
-                    <div class="project-preview chip8"></div>
-                    <div class="project-title">CHIP-8 Emulator</div>
-                </a>
-                <a class="project" href="https://github.com/plagakit/ubisoft-next-2023" target="_blank">
-                    <div class="project-preview ubisoft"></div>
-                    <div class="project-title">Ubisoft NEXT 2023</div>
-                </a>
-                <!--
-                <a class="project" href="https://www.youtube.com/watch?v=s1TsnnqgkoY" target="_blank">
-                    <div class="project-preview cat"></div>
-                    <div class="project-title">erm.... cat</div>
-                </a>
-                -->
-            </div>
-            <div class="footer">
-                <hr>
-                <p>Last updated October 2024.</p>
-                <p>All icons drawn by me (I wanna figure out a JS solution, though...)</p>
-                <p>Check out the source for this website <a href="https://github.com/plagakit/plagakit.github.io" target="_blank">here</a>.</p>
-            </div>
-        </div>
-        </div>
-    </body>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+		/>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
 </html>
