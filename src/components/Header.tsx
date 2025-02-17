@@ -1,4 +1,3 @@
-import iconURL from "../assets/front_page/icon.png";
 import Squiggle from "../components/Squiggle";
 import ProfileCoin from "./ProfileCoin";
 
@@ -14,22 +13,12 @@ const Header = () => {
 					</Squiggle>
 					<p className="px-2 pt-4 mb-5 break-words text-2xl">
 						I'm a <s>first</s> <s>second</s> third year student at{" "}
-						<span className="mcmaster">McMaster University</span>. I
-						like coding things. Check out my code below:
+						<span className="mcmaster">McMaster University</span>. I like coding things.
+						Check out my code below:
 					</p>
 				</div>
 				<div className="w-full lg:w-2/5 flex justify-center lg:justify-end">
-					<div className="h-full aspect-square">
-						<ProfileCoin />
-						{/* <img
-							src={iconURL}
-							className="w-full h-full rounded-full overflow-hidden"
-							style={{
-								border: "15px solid var(--medium-colour)",
-							}}
-							alt="Picture of me."
-						></img> */}
-					</div>
+					<ProfileCoin />
 				</div>
 			</div>
 		</header>

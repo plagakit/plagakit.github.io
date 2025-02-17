@@ -15,10 +15,7 @@ function App() {
 					<a href="https://github.com/plagakit" target="_blank">
 						<img src={githubIconURL} alt="GitHub"></img>
 					</a>
-					<a
-						href="https://www.linkedin.com/in/tplagakis/"
-						target="_blank"
-					>
+					<a href="https://www.linkedin.com/in/tplagakis/" target="_blank">
 						<img src={linkedinIconURL} alt="LinkedIn"></img>
 					</a>
 				</div>
@@ -41,10 +38,7 @@ function App() {
 					</p>
 					<p>
 						Font used is{" "}
-						<a
-							className="underline"
-							href="https://fonts.google.com/specimen/Pangolin"
-						>
+						<a className="underline" href="https://fonts.google.com/specimen/Pangolin">
 							Pangolin
 						</a>{" "}
 						by Kevin Burke. All icons drawn by me :)
