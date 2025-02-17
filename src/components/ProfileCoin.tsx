@@ -3,8 +3,8 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
-import icon1 from "../assets/front_page/icon.png";
-import icon2 from "../assets/front_page/icon_but_real.jpg";
+import icon1 from "../assets/front_page/icon1.png";
+import icon2 from "../assets/front_page/icon2.png";
 
 const Coin = (props: any) => {
 	const frontTexture = useTexture(icon1, (texture) => {
@@ -12,14 +12,23 @@ const Coin = (props: any) => {
 	});
 	const backTexture = useTexture(icon2, (texture) => {
 		texture.colorSpace = THREE.SRGBColorSpace;
+		texture.flipY = false;
 	});
 
 	const meshRef = useRef<THREE.Mesh>(null);
-	const [isSpinning, setIsSpinning] = useState(false);
 
-	const currentRot = useRef(0);
-	const targetRot = useRef(0);
-	const [velocity, setVelocity] = useState(0);
+	const radius = 1;
+	const height = 0.1;
+	const geometry = new THREE.CylinderGeometry(radius, radius, height);
+	geometry.rotateY(Math.PI / 2);
+	geometry.rotateX(Math.PI / 2);
+
+	const normalVelocity = 0.5;
+	const bumpVelocity = 10;
+	const maxVelocity = 40;
+	const deceleration = 2;
+	const [rotation, setRotation] = useState(0);
+	const [velocity, setVelocity] = useState(normalVelocity);
 	const [acceleration, setAcceleration] = useState(0);
 
 	const materials = useMemo(
@@ -33,27 +42,22 @@ const Coin = (props: any) => {
 
 	useFrame((_state, delta) => {
 		if (meshRef.current) {
-			meshRef.current.rotation.y = Math.PI / 2;
-			if (isSpinning) {
-				setVelocity(velocity + acceleration * delta);
-				currentRot.current += velocity * delta;
-
-				if (velocity > 0.0) {
-					setIsSpinning(false);
-					currentRot.current = targetRot.current;
-				}
-				meshRef.current.rotation.z = 1 * currentRot.current;
+			setAcceleration(-deceleration * (velocity - normalVelocity));
+			setVelocity(velocity + acceleration * delta);
+			if (velocity < normalVelocity) {
+				setVelocity(normalVelocity);
+				setAcceleration(0);
 			}
+
+			setRotation(rotation + velocity * delta);
+			meshRef.current.rotation.y = rotation;
 		}
 	});
 
 	const handleClick = () => {
-		if (!isSpinning) {
-			targetRot.current = currentRot.current + Math.PI;
-			setIsSpinning(true);
-			setVelocity(-3 * Math.PI);
-			setAcceleration(Math.PI * 1.515);
-		}
+		const newVel = Math.min(maxVelocity, velocity + bumpVelocity);
+		setVelocity(newVel);
+		setAcceleration(-deceleration * newVel);
 	};
 
 	return (
@@ -66,7 +70,7 @@ const Coin = (props: any) => {
 			position={[0, 0, 0]}
 			{...props}
 		>
-			<cylinderGeometry args={[6, 6, 1, 32]} />
+			<primitive object={geometry} />
 		</mesh>
 	);
 };
@@ -76,7 +80,7 @@ const ProfileCoin = () => {
 
 	return (
 		<div className="w-full h-full" style={{ cursor: isHovered ? "pointer" : "auto" }}>
-			<Canvas camera={{ position: [0, 10, 0] }} flat>
+			<Canvas camera={{ position: [0, 0, 2] }} flat>
 				<Coin
 					onPointerEnter={() => setIsHovered(true)}
 					onPointerLeave={() => setIsHovered(false)}

@@ -38,7 +38,10 @@ function App() {
 					</p>
 					<p>
 						Font used is{" "}
-						<a className="underline" href="https://fonts.google.com/specimen/Pangolin">
+						<a
+							className="underline"
+							href="https://fonts.google.com/specimen/Pangolin"
+						>
 							Pangolin
 						</a>{" "}
 						by Kevin Burke. All icons drawn by me :)
