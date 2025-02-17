@@ -5,14 +5,15 @@ import { ProjectCardProps } from "./ProjectCard";
 
 import speedgolfPreview from "../assets/front_page/speedgolf.png";
 import speedgolfGif from "../assets/front_page/speedgolf_gif.gif";
-import rendererPreview from "../assets/front_page/monkey.png";
-import rendererGif from "../assets/front_page/catgif2.gif";
+import catGif2 from "../assets/front_page/catgif2.gif";
 import catPreview from "../assets/front_page/cat.jpg";
-import catGif from "../assets/front_page/catgif.gif";
+//import catGif from "../assets/front_page/catgif.gif";
 import chip8Preview from "../assets/front_page/chip8.jpg";
 import chip8Gif from "../assets/front_page/chip8_gif.gif";
 import bombermanPreview from "../assets/front_page/ubisoft.jpg";
 import bombermanGif from "../assets/front_page/ubisoft_gif.gif";
+import rendererGif from "../assets/front_page/renderer.gif";
+import rendererPreview from "../assets/front_page/renderer.png";
 
 const Projects: ProjectCardProps[] = [
 	{
@@ -39,7 +40,7 @@ const Projects: ProjectCardProps[] = [
 		name: "3VG3 Physics Engine",
 		link: "/physics/index.html",
 		previewURL: catPreview,
-		gifURL: catGif,
+		gifURL: catGif2,
 		startDate: new Date(2024, 1),
 		completed: false,
 		sameTab: true,
@@ -97,9 +98,7 @@ const ProjectList = () => {
 	return (
 		<section>
 			{/* <Squiggle> */}
-			<h1 className="text-center lg:text-left text-4xl underline mb-3">
-				Projects
-			</h1>
+			<h1 className="text-center lg:text-left text-4xl underline mb-3">Projects</h1>
 			{/* </Squiggle> */}
 			<form>
 				<div>
@@ -113,8 +112,8 @@ const ProjectList = () => {
 				</div>
 			</form>
 			<small className="text-justify">
-				Note: my in-browser C++ projects are currently CSS-less as I
-				transition from Emscripten w/ raw HTML to React TS.
+				Note: my in-browser C++ projects are currently CSS-less as I transition
+				from Emscripten w/ raw HTML to React TS.
 			</small>
 			<div>
 				{list.map((card) => (
