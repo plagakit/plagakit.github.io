@@ -3,10 +3,13 @@ import linkedinIconURL from "./assets/front_page/linkedin_icon.gif";
 import ProjectList from "./components/ProjectList";
 import ProfileCoin from "./components/ProfileCoin";
 import Squiggle from "./components/Squiggle";
+import Shimeji from "./components/Shimeji";
+import { MIKU_CONFIG } from "./components/ShimejiData";
 
 function App() {
 	return (
 		<>
+			<Shimeji name="miku" config={MIKU_CONFIG} />
 			<div className="max-w-[40rem] mx-auto flex-col">
 				{/* Header */}
 				<header className="mt-3 flex justify-center">
@@ -42,7 +45,7 @@ function App() {
 				{/* Footer */}
 				<footer className="text-lg my-6">
 					<hr className="border-3 border-solid my-2"></hr>
-					<p>Last updated February 2025.</p>
+					<p>Last updated August 2025.</p>
 					<p>
 						Check out the source for this website{" "}
 						<a
@@ -62,8 +65,19 @@ function App() {
 						>
 							Pangolin
 						</a>{" "}
-						by Kevin Burke. All icons drawn by me :)
+						by Kevin Burke.
 					</p>
+					<p>
+						Miku{" "}
+						<a
+							className="underline"
+							href="https://github.com/lars-rooij/webmeji/tree/main"
+						>
+							Webmeji
+						</a>{" "}
+						by Lars de Rooij.
+					</p>
+					<p>All icons drawn by me :)</p>
 				</footer>
 			</div>
 		</>
