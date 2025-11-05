@@ -21,7 +21,7 @@ function App() {
 								</h1>
 							</Squiggle>
 							<p className="px-2 pt-6 break-words text-2xl">
-								I'm a <s>first</s> <s>second</s> third year student at{" "}
+								I'm a <s>first</s> <s>second</s> <s>third</s> fourth year student at{" "}
 								<span className="mcmaster">McMaster University</span>. I
 								like coding things. Check out my code below:
 							</p>
