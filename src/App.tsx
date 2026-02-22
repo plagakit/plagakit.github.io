@@ -4,6 +4,7 @@ import ProjectList from "./components/ProjectList";
 import ProfileCoin from "./components/ProfileCoin";
 import Squiggle from "./components/Squiggle";
 import Shimeji from "./components/Shimeji";
+import Webring from "./components/Webring";
 import { MIKU_CONFIG } from "./components/ShimejiData";
 
 function App() {
@@ -33,19 +34,20 @@ function App() {
 				</header>
 				{/* Socials */}
 				<div className="my-4 flex flex-wrap justify-center gap-4">
-					<a href="https://github.com/plagakit" target="_blank">
-						<img src={githubIconURL} alt="GitHub"></img>
+					<a href="https://github.com/plagakit" title="GitHub" target="_blank">
+						<img src={githubIconURL} alt="GitHub" className="pixel"></img>
 					</a>
-					<a href="https://www.linkedin.com/in/tplagakis/" target="_blank">
-						<img src={linkedinIconURL} alt="LinkedIn"></img>
+					<a href="https://www.linkedin.com/in/tplagakis/" title="LinkedIn" target="_blank">
+						<img src={linkedinIconURL} alt="LinkedIn" className="pixel"></img>
 					</a>
+					<Webring></Webring>
 				</div>
 				{/* Projects */}
 				<ProjectList />
 				{/* Footer */}
 				<footer className="text-lg my-6">
 					<hr className="border-3 border-solid my-2"></hr>
-					<p>Last updated August 2025.</p>
+					<p>Last updated February 2026.</p>
 					<p>
 						Check out the source for this website{" "}
 						<a

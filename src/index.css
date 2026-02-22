@@ -27,6 +27,11 @@
 	background: var(--light-colour);
 }
 
+.pixel {
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: -moz-crisp-edges;
+}
+
 .mcmaster {
 	font-weight: bold;
 	color: #7a003c;
